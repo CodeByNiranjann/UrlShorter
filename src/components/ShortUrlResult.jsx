@@ -1,4 +1,3 @@
-```jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -45,7 +44,7 @@ function ShortUrlResult({ result, onReset }) {
 
             <div className="mt-6 flex items-center justify-between text-sm">
                 <Link
-                    to={`/analytics/${result.code}`}
+                    to={"/analytics/" + result.code}
                     className="font-medium text-indigo-600 hover:underline"
                 >
                     View analytics
@@ -64,4 +63,3 @@ function ShortUrlResult({ result, onReset }) {
 }
 
 export default ShortUrlResult;
-```
